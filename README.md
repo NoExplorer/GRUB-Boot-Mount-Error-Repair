@@ -9,7 +9,7 @@ GRUB sucks sometimes. BASh script that could fix it automatically.
 <p>&nbsp;</p>
 
 # Installation
-### There is no real installation process. Just download the file and you are done.
+### There is no real installation process. Just download the `grubrepariscript.sh` file and you are done.
 ### **BEWARE:** You must place this file in ***the root folder of your Arch Linux installation!*** For example:
 ![image](https://user-images.githubusercontent.com/37076999/210598412-b51f53cd-09d1-45c2-99bc-2e5f7e638bbe.png)
 
