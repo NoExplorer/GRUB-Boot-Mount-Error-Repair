@@ -24,7 +24,7 @@ GRUB sucks sometimes. BASh script that could fix it automatically.
 ### 2) Create two directories with `mkdir`
 * `mkdir /mnt/arch` This will be used for the root partition
 * `mkdir /mnt/arch/boot` This will be used for the boot partition
-### 3) Mount the root and boot partition to the previously mentioned directories with `mount`. I hope you remember how you set up your Arch Linux installation. Else, I don't know.
+### 3) Mount the root and boot partition to the previously mentioned directories with `mount`. Select the partitions with the help of the `lsblk` command. I hope you remember how you set up your Arch Linux installation. Else, I don't know.
 * `mount /dev/sdx/sdt /mnt/arch` (Where X is your Linux installation partition, and T is the specific partition where the root account is stored)
 * `mount /dev/sdx/sdy /mnt/arch/boot` (Where X is your Linux installation partition, and Y is the specific partition where the boot stuff is stored)
 ### 4) Chroot into the root directory with `arch-chroot`
