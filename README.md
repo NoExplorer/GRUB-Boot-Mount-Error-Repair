@@ -1,4 +1,4 @@
-# GRUB-Boot-Mount-Error-Repair
+# ![image](https://user-images.githubusercontent.com/37076999/210605395-d7e2b712-ca4e-4ccc-ab28-8ed1ab0df17c.png) /boot Error during boot repair script.
 GRUB sucks sometimes. BASh script that could fix it automatically.
 <p>&nbsp;</p>
 
@@ -30,11 +30,16 @@ GRUB sucks sometimes. BASh script that could fix it automatically.
 ### 4) Chroot into the root directory with `arch-chroot`
 * `arch-chroot /mnt/arch`
 ### 5) Run the script and follow the instructions! ***(Make sure to navigate to the location the script is stored at. Use `cd [location (i.e. /home)]` to navigate somewhere.)***
+Run with `sh grubrepairscript.sh`. If there are issues with permissions, run with `sudo` but there shouldn't be any.
 <p>&nbsp;</p>
 
 # It didn't fix the issue. What can I do?
 ## You can inspect the code, take a look at what commands run, and execute them manually. If that fails too, keep trying. If there's an actual error, give me a message, along with the error, and I will try to fix it.
 ### You can look at the code even if the OS doesn't work. Straight out of the install disk. Just type `nano grubrepairscript.sh` and it should open.
+<p>&nbsp;</p>
+
+# **WARNING!**
+# In case I lose access to my account or there is a modification to this that I didn't approve of, LOOK AT WHAT COMMANDS RUN! BEWARE OF `sudo rm -rf /` IN PARTICULAR SINCE THAT WILL WIPE YOUR DISK! ALSO CHECK FOR ANY SUSPICIOUS PACKAGES THAT MIGHT BE IN THERE IN THE VERY RARE OCCASION I LOSE ACCESS! PACMAN SHOULD ONLY BE INSTALLING THE LINUX KERNELS!
 <p>&nbsp;</p>
 
 ### Notes:
@@ -45,3 +50,6 @@ This error can occur many times. Or so it did for me. You can just follow these 
 Fun fact: many other steps can be automated, such as the creation of the directories, the `mount` commands, the chroot, but all those would need the file to be stored at the install disk which is not possible, because the disk doesn't retain any info when its modified other than just the ISO's contents. Maybe the distro's maintainers could do something like including this file if its not considered bloat.
 
 Second fun fact: the first time this occured, it took me 3 hours to fix my installation. So fun.
+
+# License
+GNU Public License v3. Check `license.md`
