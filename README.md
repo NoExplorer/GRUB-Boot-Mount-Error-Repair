@@ -52,4 +52,4 @@ Fun fact: many other steps can be automated, such as the creation of the directo
 Second fun fact: the first time this occured, it took me 3 hours to fix my installation. So fun.
 
 # License
-GNU Public License v3. Check ![the license file](https://github.com/NoExplorer/GRUB-Boot-Mount-Error-Repair/blob/main/LICENSE)
+GNU General Public License v3. Check ![the license file](https://github.com/NoExplorer/GRUB-Boot-Mount-Error-Repair/blob/main/LICENSE)
